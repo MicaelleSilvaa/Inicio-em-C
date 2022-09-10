@@ -3,12 +3,6 @@ run = "./main"
 entrypoint = "main.c"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 
-[languages.c]
-pattern = "**/*.{c,h}"
-
-[languages.c.languageServer]
-start = "ccls"
-
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".ccls-cache"]
 
@@ -61,3 +55,11 @@ setupCommands = [
 ]
 stopAtEntry = false
 type = "cppdbg"
+
+[languages]
+
+[languages.c]
+pattern = "**/*.{c,h}"
+
+[languages.c.languageServer]
+start = "ccls"
