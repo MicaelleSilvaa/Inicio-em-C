@@ -3,6 +3,9 @@ run = "./main"
 entrypoint = "main.c"
 hidden = ["main", "main-debug", "**/*.o", "**/*.d", ".ccls-cache", "Makefile"]
 
+[nix]
+channel = "stable-22_11"
+
 [gitHubImport]
 requiredFiles = [".replit", "replit.nix", ".ccls-cache"]
 
